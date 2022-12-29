@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(rgb(192, 251, 255), green, rgb(0, 119, 255));
+}
+
+table, th, td {
+    border: 2px solid black;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    border: 5px dotted black;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Abril Fatface', Arial, sans-serif;
+    background: linear-gradient(
+            -40deg, rgb(192, 251, 255), green, rgb(0, 119, 255));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+
+#name {
+    min-width: 100px;
+}
+
+tbody {
+    text-align: center;
+    font-family: 'Work Sans', Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.descrip {
+    text-align: initial;
+}
+
+.comm {
+    font-weight: bold;
+}
+
+th {
+    font-family: 'Merriweather', garamond, serif;
+}
+
+.mid {
+    text-decoration-line: underline;
+    font-size: 18px;
+}
