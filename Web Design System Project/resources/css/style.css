@@ -1,0 +1,88 @@
+body {
+    font-family: 'andika', sans-serif;
+    margin: 0 120px auto;
+}
+
+h1 {
+    font-family: 'quicksand', sans-serif;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.container h2 {
+    font-family: 'quicksand', sans-serif;
+}
+
+.color-panel {
+    display: inline-block;
+    width: 22%;
+    margin: 20px auto;
+    text-align: center;
+    min-height: 150px;
+}
+
+.coral {
+    background-color: #ff9a4e;
+}
+
+.dark-salmon {
+    background-color: #fcdd4e;
+}
+
+.gainsboro {
+    background-color: #e8e0e2;
+}
+
+.light-sky-blue {
+    background-color: #6dccff;
+}
+
+.pale-turquoise {
+    background-color: #97eded;
+}
+
+.font-label {
+    text-decoration: underline;
+}
+
+.merriweather {
+    font-family: 'merriweather', cursive;
+}
+
+.andika {
+    font-family: 'andika', sans-serif;
+}
+
+.quicksand {
+    font-family: 'quicksand', sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-h1 h1 {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'quicksand';
+}
+
+.text-h2 h2 {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'andika';
+}
+
+.text-p p {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'merriweather';
+}
