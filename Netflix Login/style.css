@@ -69,6 +69,10 @@ button:hover {
     opacity: 0.8;
 }
 
+button:active {
+    background-color: hsl(0, 100%, 25%);
+}
+
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
