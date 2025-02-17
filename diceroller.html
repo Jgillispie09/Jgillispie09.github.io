@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets\stylesheets\projects.css">
+        <script src="https://kit.fontawesome.com/9a79f9b0b1.js" crossorigin="anonymous"></script>
+        <title>Dice Roller</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>    
+            <div class="hero">
+                <img src="assets\images\portfolioimage.JPG">
+                <div class="hero-title">
+                    <h1>Joshua Gillispie</h1>
+                    <h3>Web Designer and Developer</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="page-title" class="top-item">
+                <h2>Dice Roller</h2>
+            </div>
+            <div class="diceroller-container">
+                <div class="container-container">
+                    <div class="container-container-container">
+                        <label for="dice-selector">Select a die</label><br>
+                        <select id="dice-selector">
+                            <option value="4">d4</option>
+                            <option value="6">d6</option>
+                            <option value="8">d8</option>
+                            <option value="10">d10</option>
+                            <option value="12">d12</option>
+                            <option value="20">d20</option>
+                        </select><br>
+                        <label for="dice-num">How many dice to roll?</label><br>
+                        <input type="number" id="dice-num" min="1" value="1"><br>
+                        <button id="dice-button" type="button">Roll Dice</button><br>
+                        <span id="roll-result"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="explanation">
+                <h3>Versatile Dice Roller</h3>
+                <p>Are you a DnD player in need of a reliable dice roller? Look no further! I created this web app using a combination of HTML, CSS, and JavaScript to help adventurers roll their dice with ease.<br><br>
+
+                    With HTML, I designed the app's interface, including buttons, labels, and input fields to make it easy for users to interact. CSS allowed me to shape the layout and add a thematic background image that brings the app to life.<br><br>
+                    
+                    The heart of the app lies in JavaScript. When a user selects a die (d4, d6, d8, d10, d12, or d20) and the number of dice to roll, JavaScript takes the user's input and passes it into a function that generates random numbers for each die. For example, if the user rolls 3 d4s, the app will roll each die individually and calculate the total of the results.<br><br>
+                    
+                    This app is perfect for any adventurer looking to streamline their dice rolls and focus on the adventure ahead!</p>
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <script src="assets/scripts/dice.js"></script>
+    </body>
+</html>

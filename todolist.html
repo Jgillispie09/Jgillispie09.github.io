@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets\stylesheets\projects.css">
+        <script src="https://kit.fontawesome.com/9a79f9b0b1.js" crossorigin="anonymous"></script>
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>    
+            <div class="hero">
+                <img src="assets\images\portfolioimage.JPG">
+                <div class="hero-title">
+                    <h1>Joshua Gillispie</h1>
+                    <h3>Web Designer and Developer</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="page-title" class="top-item">
+                <h2>To-Do List Application</h2>
+            </div>
+            <div class="downloadable">
+                <p>The .exe file for this application can be downloaded <a href="https://github.com/Jgillispie09/Jgillispie09.github.io/blob/235d217f13afb6683756d695f8268bb42907142d/list.exe" target="_blank">here</a>. The python file can be downloaded <a href="https://github.com/Jgillispie09/Jgillispie09.github.io/blob/c18cef5bc5dbb065af1b701a5727b529dc290858/list.py" target="_blank">here</a>.
+                </p>
+            </div>
+            <div class="application-image">
+                <img src="assets/images/megamind_list.png" alt="Megamind's list to create a new hero" class="prod-image">
+            </div>
+            <div class="youtube-embed">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/nXn16tQJQho?si=_Wh4tOxrKNd-IU64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>Program Overview:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    This program is a task management application with a graphical user interface (GUI) designed to enhance user experience. It demonstrates proficiency in Python programming concepts and leverages various modules to provide a functional and user-friendly task management system.
+                </p>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>Modules Used:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    * tkinter: Used to create a graphical user interface<br>
+                    * simpledialog: Provides input dialog for user interaction<br>
+                    * messagebox: Displays information and confirmation messages<br>
+                    * pickle: Enables saving of the task list, completed list, and task numbering variable<br>
+                    * os: Assists in loading the state at program startup
+                </p>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>Python Concepts Utilized:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    * Data structures: Lists<br>
+                    * Control flow: If statements, while loops, for loops<br>
+                    * Function usage: Modular functions for each feature<br>
+                    * Indexing: Managing list positions and task numbering<br>
+                    * Variables: Local and global variables for data persistence
+                </p>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>How It Works:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    * GUI: The application window, buttons, message boxes, and task list display are created utilizing tkinter.<br>
+                    * Button Functionality: Clicking a button triggers its corresponding function to preform a specific task<br>
+                        * For example: Clicking 'Create a New Task' activates the create_task() function
+                </p>
+            </div>
+            <div class="sect-title">
+                <h3>Core Functions:</h3>
+            </div>
+            <div class="sect-content">
+                <p>* create_task(): Prompts the user to enter a new task via simpledialog. If a new task is provided, it is added to the bottom of the list.<br>
+                    * remove_task(): Allows user to remove a task by entering its corresponding number. Users can choose to mark tasks as completed or simply delete them.<br>
+                    * view_list(): Displays tasks present in the task list by using update_showlist(), a function that refreshes the list box display items on the task list.<br>
+                    * view_completed_list(): Displays completed tasks using view_completed_list(), a function that refreshes the list box display to only show completed items.<br>
+                    * delete_list(): Asks user for confirmation via messagebox, if member confirms, task list and completed list are deleted.<br>
+                    * save_state(): Uses pickle to save the task list, completed list, and task numbering. This is called at the end of every major function (create_task() or remove_task()) to ensure automatic saving of the program.<br>
+                    * load_listnum(): Attempts to load listnum.txt for the list numbering variable. If no file exists then listnum will default to 1.<br>
+                </p>
+            </div>
+            <div class="sect-title">
+                <h3>Key Variables:</h3>
+            </div>
+            <div class="sect-content">
+                <p>
+                    * task_list: Stores active tasks<br>
+                    * completed: Stores completed tasks<br>
+                    * listnum: Keeps track of task numbering. This number increases or decreases depending on if an item is added or removed from the list.
+                </p>
+            </div>
+            <div class="sect-title">
+                <h3>Task Removal (remove_task()):</h3>
+            </div>
+            <div class="sect-content">
+                <p>
+                    This function is a bit more complex than others and I would like to explain how this function works.<br>
+                    * The user inputs the task number they wish to remove.<br>
+                    * The program asks if it should be marked as complete.<br>
+                    * If marked complete, the task is moved to the completed list excluding its number.<br>
+                    * The numbering for the remaining tasks is adjusted to maintain sequential order.<br>
+                    * The updated task list is displayed in the GUI.<br>
+                    * The new state is saved using pickle.<br>
+                    ** This function uses indexing to ensure completed items do not carry over their number from the main task list as well as adjusting the list items on the task list to maintain sequential order.
+                </p>
+            </div>
+            <div class="sect-title">
+                <h3>A Note From The Creator(Me!):</h3>
+            </div>
+            <div class="sect-content">
+                <p>
+                    This is the first program I have created with a GUI. This program was originally a simple list running in the console. I thought that adding a GUI would make the program more user-friendly. While developing this program, I have learned how to use the tkinter, pickle, and os modules, expanding my programming skill beyond the foundation concepts I already knew.
+                    During the development process, something I found to be incredibly interesting was the fact that while loops were essential in the console-based version, but when utilizing the event-driven GUI, the while loops were no longer necessary.
+                    This project has reinforced the importance of creativity in programming--leveraging what I already knew while learning new tools to enhance functionality.
+                </p>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
