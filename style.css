@@ -120,6 +120,28 @@ body {
     justify-content: center;
     overflow: hidden;
     align-items: center;
+    position: relative;
+}
+
+#proj-preview h5, #proj-preview p {
+    position: relative;
+}
+
+#proj-preview h5 {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    padding-bottom: 75px;
+    padding-top: -5px;
+    top: 67px;
+}
+
+#proj-preview p {
+    display: flex;
+    line-height: normal;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+    bottom: 50px;
 }
 
 #proj-preview a {
@@ -131,5 +153,12 @@ body {
     line-height: 75px;
     justify-content: center;
     border: 1px solid black;
+    color: rgb(231, 206, 206);
+    text-decoration: none;
 }
 
+
+.project-link {
+    background-image: url(rosegoldcircuits.webp);
+    background-size: 250px 250px;
+}
