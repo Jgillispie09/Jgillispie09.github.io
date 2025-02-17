@@ -5,7 +5,6 @@ body {
     position: relative;
 }
 
-
 .navbar {
     display: inline;
 }
@@ -50,13 +49,13 @@ body {
     text-align: center;
     display: block;
     width: 80%;
-    left: 100px;
+    right: 80px;
 }
 
 .hero img {
     position: relative;
     border-radius: 50%;
-    height:245px;
+    height:150px;
     max-height: 250px;
     display: inline-block;
 }
@@ -65,21 +64,31 @@ body {
     display: inline-block;
     position: relative;
     text-align: center;
-    bottom: 75px;
-    padding-left: 50px;
+    bottom: 20px;
+    padding-left: 25px;
 }
 
 .hero, .hero-title {
     margin-top: 25px;
 }
 
-
 .hero-title h1 {
-    font-size: 50px;
+    font-size: 30px;
+    padding-bottom: 15px;
 }
 
 .hero-title h3 {
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.page-title {
+    position: flex;
+    display: inline-block;
+    bottom: 25px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #dddddd;
 }
 
 .social-links {
@@ -106,28 +115,106 @@ body {
     color: black;
 }
 
-#preview-box {
-    text-align: center;
+#to-do {
+    border: 1px solid black;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    max-width: 100%;
 }
 
-#proj-preview {
-    width: 100%;
+#to-do h3, #to-do p {
+    padding-left: 25px;
+}
+
+#to-do p {
+    padding-bottom: 25px;
+}
+
+#to-do-img {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+}
+
+#to-do img {
+    position: relative;
+    display: flex;
+    width: 75%;
+}
+
+.prod-image {
+    max-width: 50%;
+}
+
+.prod-image:hover {
+    transform: scale(1.25,1.25);
+    position: relative;
+    bottom: 25px;
+    left: 50px;
+    z-index: 1;
+}
+
+.youtube-embed {
+    float: right;
+    position: relative;
+    bottom: 215px;
+}
+
+#dice-roll {
     border: 1px solid black;
-    overflow: hidden;
+    margin-top: 10px;
+}
+
+#dice-roll h3, #dice-roll p{
+    padding-left: 25px;
+}
+
+#dice-roll p {
+    padding-bottom: 25px;
+}
+
+#dice-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.diceroller-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     align-items: center;
+    top: 40px;
 }
 
-#proj-preview a {
-    width: 250px;
+.container-container {
+    background-color: beige;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
     height: 250px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    line-height: 75px;
-    justify-content: center;
-    border: 1px solid black;
+    background-image: url(dnd.webp);
+    background-size: 300px 250px;
 }
 
+.container-container-container {
+    position: relative;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+    color: white;
+}
+
+label {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+#roll-result {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
