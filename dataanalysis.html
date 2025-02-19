@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="projects.css">
+        <script src="https://kit.fontawesome.com/9a79f9b0b1.js" crossorigin="anonymous"></script>
+        <title>To-do List</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/joshua-gillispie-a0b66a194/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Jgillispie09/Jgillispie09.github.io" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@threepoundcat" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ah_well_i_tried/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>    
+            <div class="hero">
+                <img src="portfolioimage.JPG">
+                <div class="hero-title">
+                    <h1>Joshua Gillispie</h1>
+                    <h3>Web Designer and Developer</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="page-title" class="top-item">
+                <h2>To-Do List Application</h2>
+            </div>
+            <div class="downloadable">
+                <p>The .exe file for this application can be downloaded <a href="https://github.com/Jgillispie09/Jgillispie09.github.io/blob/235d217f13afb6683756d695f8268bb42907142d/list.exe" target="_blank">here</a>. The python file can be downloaded <a href="https://github.com/Jgillispie09/Jgillispie09.github.io/blob/c18cef5bc5dbb065af1b701a5727b529dc290858/list.py" target="_blank">here</a>.
+                </p>
+            </div>
+            <div class="application-image">
+                <img src="datanalysis.png" alt="Screenshot of data analysis project code" class="prod-image">
+            </div>
+            <div class="youtube-embed">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/nXn16tQJQho?si=_Wh4tOxrKNd-IU64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>Program Overview:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    The program extracts a dataset from a CSV file, cleans the data, locates key data points such as total revenue, best-selling items, and the highest revenue day, and then visualizes the total sales per day in a line graph. The purpose of the program is to help analyze sales trends and highlight important insights from the data.</p>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>Modules Used:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    * Pandas: Used for handling and manipulating the dataset. It allows for easy data extraction, cleaning, and analysis.<br>
+                    * Matplotlib: Used for creating data visualizations. Specifically, it is used here to generate a line graph to visualize total sales per day.
+                </p>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>Python Concepts Utilized:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    * Importing Modules: The program imports external libraries (Pandas and Matplotlib) to utilize their functions.<br>
+                    * Extracting Data: The program reads data from a CSV file using Pandas' read_csv function, storing the data in a dataframe.<br>
+                    * Cleaning Data: The program checks for null values and replaces them with zeros, ensuring the analysis doesn’t run into errors due to missing data.<br>
+                    * Understanding of DataFrames: A fundamental Pandas concept where the dataset is represented as a structured table (rows and columns), making data manipulation and analysis efficient.<br>
+                    * Variables: Variables are used to store data, such as the dataframe and results of data analysis (e.g., total revenue, best-selling item).
+                </p>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>How It Works:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    * Extract Data: The program takes data from a CSV file and assigns it to a Pandas dataframe variable.<br>
+                    * Clean Data: It checks for any null (missing) values in the dataframe. If any are found, they are replaced with 0 to prevent errors during data processing.<br>
+                    * Locate Key Data Points: The program analyzes the cleaned dataset to find important data points:<br>
+                    - Total revenue<br>
+                    - Best-selling item<br>
+                    - Highest revenue day<br>
+                    These data points are then printed to the console.<br>
+                    * Data Visualization: Finally, the program uses Matplotlib to convert the data into a line plot, visualizing the total sales per day.
+                </p>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
