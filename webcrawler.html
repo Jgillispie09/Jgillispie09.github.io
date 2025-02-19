@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="projects.css">
+        <script src="https://kit.fontawesome.com/9a79f9b0b1.js" crossorigin="anonymous"></script>
+        <title>WebCrawler</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/joshua-gillispie-a0b66a194/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Jgillispie09/Jgillispie09.github.io" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@threepoundcat" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ah_well_i_tried/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>    
+            <div class="hero">
+                <img src="portfolioimage.JPG">
+                <div class="hero-title">
+                    <h1>Joshua Gillispie</h1>
+                    <h3>Web Designer and Developer</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="page-title" class="top-item">
+                <h2>WebCrawler (GameCrawler)</h2>
+            </div>
+            <div class="downloadable">
+                <p>The python file can be downloaded <a href="https://github.com/Jgillispie09/Jgillispie09.github.io/blob/1f959d84a04f7a591366275d447a2acd41160854/gamecrawler.py" target="_blank">here</a>.
+                </p>
+            </div>
+            <div class="application-image">
+                <img src="webcrawler-img.png" alt="Screenshot of data analysis project code" class="prod-image">
+            </div>
+            <div class="youtube-embed">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/6Qi-ouPZsMk?si=mpBmiP9uZhk2FYRy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>Program Overview:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    This Python program is a web crawler designed to scrape four game review websites for data on trending games and their reviews. The primary purpose is to gather and compare review information across different platforms, offering insights into how trending games are perceived by various review sources.</div>
+            <div class="sect-title" class="top-item">
+                <h3>Modules Used:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    * Requests: Sends HTTP requests to web servers and receives response codes to ensure servers are accessible.<br>
+                    * BeautifulSoup (bs4): Parses the HTML content of each website, acting as the core parser for the web crawler.<br>
+                    * Pandas: Creates dataframes to structure and manipulate the scraped data efficiently.<br>
+                    * Datetime: Adds timestamping to generated Excel files for proper date and time tracking.<br>
+                    * Openpyxl (load_workbook): Loads existing Excel files and saves new data into the workbook.
+                </p>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>Python Concepts Utilized:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    * Control Structures: while loops, if statements, and for loops to manage program flow.<br>
+                    * Data Handling: Lists, dataframes, and modules (import statements).<br>
+                    * Web Requests: .get() method for retrieving web pages.<br>
+                    * Data Parsing: BeautifulSoup to navigate and extract HTML content.<br>
+                    * ETL (Extract, Transform, Load): Gathers data, processes it into a readable format, and saves it to an Excel file.
+                </p>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>How It Works:</h3>
+            </div>
+            <div class="sect-content" class="top-item">
+                <p>
+                    * Website Requests: The program uses the Requests module to send HTTP requests to all four game review websites.<br>
+                    -- If all websites return a status code 200, the program proceeds.<br>
+                    -- If any website fails, an error message is displayed, and the program exits.<br>
+                    * Data Extraction: BeautifulSoup parses the HTML content of each website. The program identifies specific HTML elements containing review information. It then navigates through the HTML structure to extract game titles, ratings, review excerpts, and other key details. Extracted data from each website is stored in separate lists.<br>
+                    * Data Organization: The program converts the lists into Pandas dataframes, organizing the data in a tabular format. Variables are set for the workbook name, including the current date and time using Datetime.<br>
+                    Data Export to Excel: The program writes all the extracted data into an Excel file. It opens the workbook using Openpyxl and formats the columns to avoid squished data. The workbook is saved, and a success message is displayed in the console.<br>
+                </p>
+            </div>
+            <div class="sect-title" class="top-item">
+                <h3>Key Features:</h3>
+                <p>
+                    * Error Handling: Detects server issues early, preventing wasted processing time.<br>
+                    * Automated Formatting: Ensures the Excel file is readable and well-organized.<br>
+                    * Data Comparison: Allows for cross-platform analysis of game reviews.
+                </p>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
