@@ -195,6 +195,7 @@ body {
 
 .prod-image {
     max-width: 50%;
+    max-height: 25%;
 }
 
 .prod-image:hover {
