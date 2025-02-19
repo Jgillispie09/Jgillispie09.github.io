@@ -141,6 +141,13 @@ body {
     width: 75%;
 }
 
+#data-analysis {
+    border: 1px solid black;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    max-width: 100%;
+}
+
 #data-analysis h3, #data-analysis p {
     padding-left: 25px;
 }
