@@ -149,6 +149,17 @@ body {
     padding-bottom: 25px;
 }
 
+#data-img {
+    display: flex;
+    justify-content: center;
+}
+
+#data-analysis img {
+    position: relative;
+    display: flex;
+    width: 75%;
+} 
+
 .prod-image {
     max-width: 50%;
 }
