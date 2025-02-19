@@ -82,6 +82,15 @@ body {
     font-size: 20px;
 }
 
+.page-title {
+    position: flex;
+    display: inline-block;
+    bottom: 25px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #dddddd;
+}
 
 .social-links {
     position: relative;
