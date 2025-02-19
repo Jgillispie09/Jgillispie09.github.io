@@ -141,6 +141,14 @@ body {
     width: 75%;
 }
 
+#data-analysis h3, #data-analysis p {
+    padding-left: 25px;
+}
+
+#data-analysis p {
+    padding-bottom: 25px;
+}
+
 .prod-image {
     max-width: 50%;
 }
