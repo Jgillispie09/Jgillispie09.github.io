@@ -167,6 +167,32 @@ body {
     width: 75%;
 } 
 
+#webcrawler {
+    border: 1px solid black;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    max-width: 100%;
+}
+
+#webcrawler h3, #webcrawler p {
+    padding-left: 25px;
+}
+
+#webcrawler p {
+    padding-bottom: 25px;
+}
+
+#webcrawler-img {
+    display: flex;
+    justify-content: center;
+}
+
+#webcrawler img {
+    position: relative;
+    display: flex;
+    width: 75%;
+} 
+
 .prod-image {
     max-width: 50%;
 }
