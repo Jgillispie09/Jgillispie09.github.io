@@ -191,6 +191,7 @@ body {
     position: relative;
     display: flex;
     width: 75%;
+    max-height: 250px;
 } 
 
 .prod-image {
