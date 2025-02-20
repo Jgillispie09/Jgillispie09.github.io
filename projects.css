@@ -200,7 +200,7 @@ body {
 }
 
 .prod-image:hover {
-    transform: scale(1.25,1.25);
+    transform: scale(1.5,1.5);
     position: relative;
     bottom: 25px;
     left: 50px;
